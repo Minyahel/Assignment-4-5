@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-size: 1.3rem;
+}
+header {
+    border-bottom: solid;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+figcaption {
+    font-size: 1rem;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+.clear{
+    clear: left;
+}
+
+div {
+    margin: 1.66%;
+    width: 30%;
+    height: auto;
+    float: left;
+}
+
+footer {
+    border-top: solid;
+    font-size: 0.8rem;
+}

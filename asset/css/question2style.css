@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    text-align: center;
+}
+
+.upper{
+    display: inline-block;
+    margin: 100px 98px 0 98px;
+    padding: 100px;
+}
+.lower {
+    display: inline-block;
+    margin: 0px 98px 100px 98px;
+    padding: 100px;
+}
+.middle {
+    display: inline-block;
+    border: solid;
+    padding: 100px;
+    margin: -6.5px;
+}
+p:nth-of-type(1) {
+    border-style: none solid solid none;
+}
+p:nth-of-type(2) {
+    border-style: none none solid solid;
+}
+p:nth-of-type(4) {
+    border-style: solid solid none none;
+}
+p:nth-of-type(5) {
+    border-style: solid none none solid;
+}
+

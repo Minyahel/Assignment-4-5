@@ -1,0 +1,411 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+}
+.contain {
+    width: 500px;
+    height: 300px;
+    margin:50px;    
+    float: left;
+}
+.flag{
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: solid;
+}
+
+.vietnam p:nth-child(1){
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: #DA251D;
+    
+}
+.vietnam p:nth-child(2){
+    position: relative;
+    color: #FFFF00;
+    font-size: 85px;
+    top:50%;
+    margin-top: -61.6px;
+}
+
+.france p:nth-child(1){
+    position: relative;
+    background-color:#002654;
+    width: 166.66px;
+    height: 300px;
+}
+.france p:nth-child(2) {
+    position: relative;
+    background-color:#FFFFFF;
+    width: 166.66px;
+    height: 300px;
+    left:166.66px;
+    bottom: 300px;
+    
+}
+.france p:nth-child(3){
+    position: relative;
+    background-color:#CE1126;
+    width: 166.66px;
+    height: 300px;
+    left: 334px;
+    bottom: 600px;
+}
+
+
+.chile p:nth-child(1){
+    position: relative;
+    font-size: 50px;
+    background-color: #0065B2;
+    width: 200px;
+    height: 150px;
+}
+
+.chile p:nth-child(2){
+    position: relative;
+    font-size: 50px;
+    background-color: #ED1B24;
+    width: 500px;
+    height: 150px;
+}
+
+.chile p:nth-child(3){
+    position: relative;
+    font-size: 50px;
+    color: white;
+    bottom: 265px;
+    right: 150px;
+}
+
+.china p:nth-child(1) {
+    position: relative;
+    background-color: #ED2128;
+    width: 500px;
+    height: 300px;
+}
+
+.china p:nth-child(2) {
+    position: relative;
+    color: #EEE92F;
+    font-size: 95px;
+    bottom: 99%;
+    right: 37%;
+}
+
+.china p:nth-child(3) {
+    position: relative;
+    color: #EEE92F;
+    bottom:139%;
+    font-size: 30px;
+    right: 24%;
+    transform: rotate(25deg);
+}
+.china p:nth-child(4) {
+    position: relative;
+    color: #EEE92F;
+    bottom:143%;
+    font-size: 30px;
+    right: 20%;
+    transform: rotate(46deg);
+}
+.china p:nth-child(5) {
+    position: relative;
+    color: #EEE92F;
+    bottom:144%;
+    font-size: 30px;
+    right: 20%;
+    transform: rotate(10deg);
+}
+.china p:nth-child(6) {
+    position: relative;
+    color: #EEE92F;
+    bottom:147%;
+    font-size: 30px;
+    right: 24%;
+    transform: rotate(30deg);
+}
+
+.colombia p:nth-child(1) {
+    position: relative;
+    background-color: #FFF200;
+    height: 150px;
+    width: 500px;
+}
+.colombia p:nth-child(2) {
+    position: relative;
+    background-color: #0064B4;
+    height: 75px;
+    width: 500px;
+}
+.colombia p:nth-child(3) {
+    position: relative;
+    background-color: #ED1C24;
+    height: 75px;
+    width: 500px;
+}
+
+.ireland p:nth-child(1){
+    position: relative;
+    background-color:#00A261;
+    width: 166.66px;
+    height: 300px;
+}
+.ireland p:nth-child(2){
+    position: relative;
+    background-color:#F89828;
+    width: 166.66px;
+    height: 300px;
+    left: 67%;
+    bottom: 100%;
+}
+
+.israel p:nth-child(1) {
+    position: relative;
+    background-color: #7BAEDD;
+    width: 500px;
+    height: 25px;
+    top: 6.25%;
+}
+.israel p:nth-child(2) {
+    position: relative;
+    color: #7BAEDD;
+    font-size: 225px;
+    bottom: 12.25%;
+}
+.israel p:nth-child(3) {
+    position: relative;
+    background-color: #7BAEDD;
+    height: 25px;
+    width: 500px;
+    bottom: 22.75%;
+}
+.switzerland p:nth-child(1) {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color:#EC1B24 ;
+}
+.switzerland p:nth-child(2) {
+    position: relative;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    bottom: 75%;
+    left: 50%;
+    margin-left: -25px;
+}
+.switzerland p:nth-child(3) {
+    position: relative;
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    bottom: 75%;
+    left: 50%;
+    margin-left: -75px;
+}
+.switzerland p:nth-child(4) {
+    position: relative;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    bottom: 75%;
+}
+
+.tanzania p:nth-child(1) {
+    position: relative;
+    background-color: #00A64F;
+    width: 500px;
+    height: 203px;
+    transform: rotate(-30deg);
+    bottom:75px;
+    right: 89px;
+}
+
+.tanzania p:nth-child(2) {
+    position: relative;
+    background-color: #231F1F;
+    width: 600px;
+    height: 75px;
+    right: 60px;
+    transform: rotate(-30deg);
+    bottom: 104px;
+    border: solid #FDF100 12.5px;
+}
+
+.tanzania p:nth-child(3) {
+    position: relative;
+    background-color: #7AAEDE;
+    width: 583px;
+    height: 223px;
+    transform: rotate(-30deg);
+    bottom: 117px;
+    left: 25px;
+}
+
+.norway p:nth-child(1) {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: #0066B2;
+}
+.norway p:nth-child(2) {
+    position: relative;
+    background-color: #EC1C24;
+    border-right: solid;
+    border-bottom: solid;
+    border-color: white;
+    border-width: 10px;
+    width:125px;
+    height: 113.75px;
+    bottom: 100%;
+}
+.norway p:nth-child(3) {
+    position: relative;
+    background-color: #EC1C24;
+    border-right: solid;
+    border-top: solid;
+    border-color: white;
+    border-width: 10px;
+    width:125px;
+    height: 113.75px;
+    bottom: 82%;
+}
+.norway p:nth-child(4) {
+    position: relative;
+    background-color: #EC1C24;
+    border-left: solid;
+    border-bottom: solid;
+    border-color: white;
+    border-width: 10px;
+    width:302.5px;
+    height: 113.75px;
+    left: 38%;
+    bottom: 182%;
+}
+.norway p:nth-child(5) {
+    position: relative;
+    background-color: #EC1C24;
+    border-left: solid;
+    border-top: solid;
+    border-color: white;
+    border-width: 10px;
+    width:302.5px;
+    height: 113.75px;
+    left: 38%;
+    bottom: 165%;
+}
+
+.unitedkingdom p:nth-child(1) {
+    position: relative;
+    background-color: #203880;
+    width: 500px;
+    height: 300px;
+}
+.unitedkingdom p:nth-child(2) {
+    position: relative;
+    background-color: #D80030;
+    width: 610px;
+    height: 10px;
+    border-top: solid white 15px;
+    border-bottom: solid white 5px;
+    bottom: 174px;
+    right: 60px;
+    transform: rotate(30deg);
+}
+.unitedkingdom p:nth-child(3) {
+    position: relative;
+    background-color: #D80030;
+    width: 610px;
+    height: 10px;
+    border-top: solid white 15px;
+    border-bottom: solid white 5px;
+    bottom: 196px;
+    right: 63px;
+    transform: rotate(-31deg);
+}
+.unitedkingdom p:nth-child(4) {
+    position: relative;
+    background-color: #D80030;
+    width: 62px;
+    height: 300px;
+    border-left: solid white 15px;
+    border-right: solid white 15px;
+    bottom: 360px;
+    left: 200px;
+}
+.unitedkingdom p:nth-child(5) {
+    position: relative;
+    background-color: #D80030;
+    width: 216px;
+    height: 50px;
+    border-top: solid white 18px;
+    border-bottom: solid white 18px;
+    bottom: 552px;
+    left: -0.5px;
+}
+.unitedkingdom p:nth-child(6) {
+    position: relative;
+    background-color: #D80030;
+    width: 224px;
+    height: 50px;
+    border-top: solid white 18px;
+    border-bottom: solid white 18px;
+    bottom: 638px;
+    left: 277px;
+}
+
+.greece p:nth-child(1) {
+    position: relative;
+    border-top: solid #7BAEDE 33.3333px;
+    border-bottom: solid #7BAEDE 33.3333px;
+    height: 33.3333px;
+    bottom: 0;
+    left: 0;
+}
+.greece p:nth-child(2) {
+    position: relative;
+    background-color:#7BAEDE ;
+    border-top: solid white 33.3333px;
+    border-bottom: solid white 33.3333px;
+    height: 33.3333px;
+}
+.greece p:nth-child(3) {
+    position: relative;
+    border-top: solid #7BAEDE 33.3333px;
+    border-bottom: solid #7BAEDE 33.3333px;
+    height: 33.3333px;
+}
+.greece p:nth-child(4) {
+    position: relative;
+    background-color: #7BAEDE;
+    height: 150px;
+    width: 150px;
+    bottom:317px;
+}
+.greece p:nth-child(5) {
+    position: relative;
+    background-color: white;
+    width: 33.3333px;
+    height: 165px;
+    bottom: 449px;
+    left: 60px;
+}
+.greece p:nth-child(6) {
+    position: relative;
+    background-color: white;
+    width: 150px;
+    height: 33.3333px;
+    bottom: 549px;
+    left: 0;
+}

@@ -3,16 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="asset/Images/favicon.ico" type="image/x-icon"/ >
     <title>Blog | Minyahel Fekadu</title>
+    <link rel="stylesheet" href="./asset/css/blog.css">
 </head>
 <body>
-    <hr>
-    <a href="index.html">Home</a> | 
-    <a href="contact.html">Contact</a> | 
-    <a href="gallery.html">Gallery</a> | 
-    <a href="blog.html">Blog</a> |
-    <a href="myworks.html">My Works</a>
-    <hr>    
+    <header>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="gallery.html">Gallery</a> | 
+            <a href="blog.html">Blog</a> |
+            <a href="myworks.html">My Works</a>
+        </nav>
+    </header>
+    <div id=content>
+            <section>
+                <p class="title">Does it matter to use relative size(%,em,rem) one styling the size of an element so that the element is responsive ? Why ?</p>
+                <article>
+                    <p>
+                        Yes!, using these values instead of hardcoded pixel values is important because they allow our page to be responsive. But how?, to understand that we need a primer on %, em and rem
+                        <h4>%</h4>
+                        % values apply to pretty much every size related property is css and the way they work is pretty simple. When you use percent measurnment, context and target are taken into account and 
+                        the end result is found. Here, target is the size of the element we are resizing(target size) and context is the size of the containing element. The context is usually the same as that
+                    </p>
+                </article>
+            </section>
+            <section>
+                <p class="title">We said 16px is default browser width so what does it mean when we say 200px ? How does the browser interpret that ?</p>
+                <article>
+                        <p>
+                            Default font-size of 16px is more or less the same accross many devices and browsers. This is the default size of the html document and it is the root font-size of the document. This
+                            ofcourse is specified in the user-stylesheet the browser has and it will remain the same size unless the user changes the value in the browser's settings or the developer changes the value
+                            in his stylesheet. Let's say a user changes the value of the default size from 16px to 200px. This affects some aspects of the rendering of pages while it doesn't affect others. Let's start
+                            with what isn't affected by this change, in short, everything that has sizes set in pixel value of pt value which do not take into account the users preferences. On the other hand, what would
+                            be affected is any type of font that uses values that are relative, either em, rem or %. Any font that uses rem any where on the web page will be affected while only those fonts that use em and 
+                            % and come right after the root element meaning the first font in the page are affected.
+                        </p>
+                </article>
+            </section>
+            <section>
+                <p class="title">Explain in detail(in technical terms) the specific changes in css3</p>
+                <article>       
+                    <p>
+                        There are many changes that were brought about with CCS3 and the major ones are listed below
+                        <dl>
+                            <dt></dt>
+                            <dd>
+                            
+                            </dd>
+                            <dt></dt>
+                            <dd>
+                            
+                            </dd>
+                        </dl>
+                    </p>
+                </article>
+            </section>
+    </div>
 </body>
 </html>

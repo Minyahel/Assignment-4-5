@@ -383,7 +383,7 @@ body {
 .greece p:nth-child(3) {
     position: relative;
     border-top: solid #7BAEDE 33.3333px;
-    border-bottom: solid #7BAEDE 33.3333px;
+    border-bottom: solid #7BAEDE 34px;
     height: 33.3333px;
 }
 .greece p:nth-child(4) {

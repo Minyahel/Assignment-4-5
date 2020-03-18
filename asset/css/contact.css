@@ -1,0 +1,17 @@
+header {
+    border-bottom: solid 1px #9A9A9A;
+}
+
+#intro img {
+    float: left;
+}
+
+#intro {
+    border-bottom: solid 1px #9A9A9A;
+}
+
+form label:nth-of-type(1) {
+    position: relative;
+    left: 0;
+    bottom: 0;
+}

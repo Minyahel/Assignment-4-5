@@ -1,3 +1,22 @@
 header {
-    border-bottom: solid 1px;
+    border-bottom: solid 1px #9A9A9A;
+}
+#intro {
+    height: 200px;
+    border-bottom: solid 1px #9A9A9A;
+
+}
+#intro img {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    bottom: 20px;
+}
+footer {
+    border-top: solid #9A9A9A 1px;
+    text-align: center;
+}
+
+div {
+    border-bottom:  solid 1px #9A9A9A;
 }

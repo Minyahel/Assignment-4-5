@@ -17,190 +17,195 @@
             <a href="myworks.html">My Works</a>
         </nav>
     </header>
-    <h1></h1>
-    <div id=content>
-            <section>
-                <h2 class="title">Does it matter to use relative size(%,em,rem) one styling the size of an element so that the element is responsive ? Why ?</h2>
-                <article>
-                    <p>
-                        Yes!, using these values instead of hardcoded pixel values is important because they allow our page to be responsive. But how?, to understand 
-                        that we need a primer on %, em and rem<br>
-                        percent %<br>
-                        % values apply to pretty much every size related property is css and the way they work is pretty simple. When you use percent measurnment, 
-                        context and target are taken into account and the end result is found. Here, target is the size of the element we are resizing(target size) 
-                        and context is the size of the containing element. So, when we need to find the percent whe have to apply, all we have to do is divide the 
-                        target by the context and then multiply the result by one hundred. Now this applies to almost all attributes that are inherited such as 
-                        width, font-size etc. meaning that each value assigned a percent value will take the context of the same property, meaning that width will
-                         take the context size of the parent's width and so on for other properties.
-                        https://www.sitepoint.com/power-em-units-css/<br>
-                        em<br>
-                        what about the em unit. The em unit takes a predefined measurnment value from the context and multiplies it with the constant given in front
-                        of the em unit such as 1em, 1.5em and so on. So thent the em unit works in a way very similar to percent however there is one crucial difference. 
-                        The em unit is only concerned with the font size of the context. meaning that even if we assign an em value for width or other non font properties,
-                        the initial em value is taken from the font-size of the parent element.<br>
-                        rem<br>
-                        As the name suggests, the rem unit is very similar to the em measurnment value. Similar to the em value, rem is only concerned with font size value 
-                        but what differs is that rem value doen't take the inital measurnment from the context but from the font size of the root element i.e.  the font size
-                        of the html document. Even though developers don't usually change the root font size, this value is generally accepted to be 16px since that is the
-                        default value used in almost every browser.
-                        now that we understand that, how do these values allow us to have a responsive website. These values allow us to have a responsive website in that 
-                        they are relative to each other. If  a user were to change the size of the root font, then that size would cascade down and have an effect on every
-                         browser font. As for the zoom, the zoom applies a blank increase or decrease ratio for every measurement on screen.
-                    </p>
-                </article>
-            </section>
-            <section>
-                <h2 class="title">We said 16px is default browser width so what does it mean when we say 200px ? How does the browser interpret that ?</h2>
-                <article>
-                    <p>
-                        Default font-size of 16px is more or less the same accross many devices and browsers. This is the default size of the html document and it is the root 
-                        font-size of the document. This ofcourse is specified in the user-stylesheet the browser has and it will remain the same size unless the user changes 
-                        the value in the browser's settings or the developer changes the value in his stylesheet. Let's say a user changes the value of the default size from 
-                        16px to 200px. This affects some aspects of the rendering of pages while it doesn't affect others. Let's startwith what isn't affected by this change,
-                         in short, everything that has sizes set in absolute measurement values such as px or pt or cm..  which do not take into account the users preferences. 
-                         On the other hand, what would be affected is any type of measurement that uses values that are relative, either em, rem or %. Any font that uses rem 
-                         any where on the web page will be affected while only those fonts that use em and  % and come right after the root element meaning the first font in 
-                         the page are affected.
-                    </p>
-                </article>
-            </section>
-            <section>
-                <h2 class="title">Explain in detail(in technical terms) the specific changes in css3</h2>
-                <article>       
-                    <p>
-                        There are many changes that were brought about with CCS3 and the major ones are listed below
-                        <dl>
-                            <dt>New Selectors</dt>
-                                <dd>
-                                    With the arrival of CSS3 a host of new selectors have been introduced that make the styling process a lot easier.<br>
-                                    Many of these changes allow us to narrow down the selection process.
-                                    <h3>Attribute Selectors</h3>
-                                    These selectors allow us to apply formatting to certain tags that have attributes we need
-                                    <ul>
-                                        <li>E[attribute="value"]: Elements of E type which attribute is equal to its "value"</li>
-                                    </ul>
-                                    These attribute selectors can also work like regular expressions where we can select a value based on it's alphabet
-                                    <h3>Position Selectors</h3>
-                                    These selectors work based on the position of the element in the document.
-                                    Each specific selector is listed below
-                                    <ul>
-                                        <li>:root -> selects the root element</li>
-                                        <li>E:nth-child(N) -> selects the element of E type that is the N<sup>th</sup> child of it's parent</li>
-                                        <li>E:nth-last-child(N) -> the same as the above but starting from the last element</li> 
-                                        <li>E:nth-of-type(N) -> selects the N<sup>th</sup> element of E type in the father element</li>
-                                        <li>E:nth-last-of-type(N) -> the same as the above but starting from the last element</li>
-                                        <li>E:first-of-type -> selects an element of E type that comes first in the father element</li>
-                                        <li>E:last-of-type -> the same as the above but starting from the last element</li>
-                                        <li>E:only-child -> selects an element of E type that is the only child of its father element</li>
-                                        <li>E:only-of-type -> selects an element of any type the is the only child of it's type in it's parent</li>                                       
-                                    </ul>
-                                    <h3>Pseudo-Element selectors</h3>
-                                    Pseudo-element selectors were available in CSS2 however
-                                </dd>
-                            <dt>Animation</dt>
-                                <dd>
-                                    A CSS animation lets an element gradually change from one style to another. The whole concept of CSS animations was introduced in CSS3.
-                                    below are a list of CSS properties that were introduced that allow us to make animations.
-                                    <ul>
-                                        <li>animation -> specifies animations</li>
-                                        <li>animation-delay -> specifies a delay before the animation starts</li>
-                                        <li>animation-direction -> specifies the direction the animation will play in</li>
-                                    </ul>
-                                </dd>
-                            <dt>Background</dt>
-                                <dd>
-                                    Background CSS properties were available before CSS3 but CSS3 introduced some key attributes for controlling background.
-                                    <ul>
-                                        <li>background-clip -> specifies where the background should end as in  the border-box, padding-box or content-box</li>
-                                        <li>background-origin -> specifies wehre the background should start </li>
-                                        <li>background-size -> specifies the size of the background</li>
-                                    </ul>
-                                </dd>
-                            <dt>Border</dt>
-                                    An ability to create and control border properties existed before CSS3 but with CSS3 important features were added. They are listed below.
-                                <dd>
-                                    <ul>
-                                        <li>border-radius -> defines the shape of the border corners of an element</li>
-                                        <li>border-image -> specifies the usage of an image for a border </li>
-                                    </ul>
-                                    In addition to this, there are specifics that control border-radius and border-image
-                                </dd>
-                            <dt>Color</dt>
-                                <dd>
-                                    The color property existed before CSS3 but CSS3 added opacity that allows us to control the transparency of any element. It also added functionality for 
-                                    linear gradient and radial gradient.
-                                </dd>
-                            <dt>Flexible Box Layout</dt>
-                                <dd>
-                                    Flexible Box or FlexBox for short was a completely new addition to CSS3 that allows us to place elements on screen in a completely new way.
-                                </dd>
-                            <dt>Font Properties</dt>
-                                <dd>
-                                    CSS3 didn't get much innovation when it comes to fonts and it added two rather non frequently used properties. The first one is font-size-adjust which specifies
-                                    which type of characters to base the font size on and the other one is font-stretch that condenses and stretches fonts. 
-                                </dd>
-                            <dt>Multi-column layout Properties</dt>
-                                <dd>
-                                    Multi-column layout is a completely new addition to CSS3 that allows the usage of multiple columns to present info.<br>
-                                    The following are the properties that are used to control this.
-                                    <ul>
-                                        <li>column-count -> specifies the number of columns that will be used</li>
-                                        <li>column-fill -> specifies how columns will be filled</li>
-                                        <li>column-gap -> specifies the gap between columns</li>
-                                        <li>column-rule -> specifies what kind of line will be drawn between columns</li>
-                                        <li>column-span -> specifies how many columns an element will span across</li>
-                                    </ul>
-                                    Those are the main properties but other shorthand properties can be used as well
-                                </dd>
-                            <dt>Outline Properties</dt>
-                                <dd>
-                                    Outlines are like borders for the element box and they are not new in CSS3, however, it introduced outline-offset that allows to increase the space
-                                    between an outline and the border edge of an element
-                                </dd>
-                            <dt>Text Properties</dt>
-                                <dd>
-                                    Text properties were not a new addition to CSS3, however it introduced properties that allow for greater text control. The properties are listed below.
-                                    <ul>
-                                        <li>tab-size  -> specifies the length of the tab character</li>
-                                        <li>text-align-last -> specifies how the last line of a block is aligned</li>
-                                        <li>text-decoration-color -> specifies the color 
-                                    </ul>
-                                </dd>
-                            <dt>Transform Properties</dt>
-                                <dd>
-                                    The transform properties were new additions to CSS3 and they allow us to apply 2D or 3D transformations to an element such as rotating, scaling and moving elements.
-                                    The following new tags associated with CSS3 allow us to perform those actions.
-                                    <ul>
-                                        <li>backface-visibility -> specifies whether or not the back side of the element will be visible upon transformation</li>
-                                        <li>perspective -> defines the perspective from which all child elements of an object are viewed</li>
-                                        <li>perspective-origin -> defines the origin (the vanishing point for the 3D space) for the perspective property</li>
-                                        <li>transform -> applies a 2D or 3D transformation to an element</li>
-                                    </ul>
-                                </dd>
-                            <dt>Transitions Properties</dt>
-                                <dd>
-                                    Transitions were new additions to CSS3 and they were created with the aim of changing property values of elements smoothly and with a controlled delay.
-                                    The following tags allow us to perform transitions. The transition properties however, have to be applied in junction with pseudo-elements.
-                                    <ul>
-                                        <li>transition -> this is a shorthand property that allows us to control which property of an element changes and the delay it takes</li>
-                                    </ul>
-                                </dd>
-                            <dt>Visual Formatting Properties</dt>
-                                <dd>
-                                    Visual formatting properties apply to the kind of properties of an element that apply to an element's display and position within the document.
-                                    Not many additions have been made to this property, however, the new changes are listed below.
-                                    <ul>
-                                        <li>overflow-x -> specifies how content is dealt with if it overflows in the x direction</li>
-                                        <li>overflow-y -> specifies how content is dealt with if it overflows in the y direction</li>
-                                        <li>resize ->  specifies whether or not an element is resizable by the user</li>
-                                        <li>box-shadow -> allows us to apply a shadow to the element's box</li>
-                                        <li>box-sizing -> alters the default CSS box-model</li>
-                                    </ul>
-                                </dd>
-                        </dl>
-                    </p>
-                </article>
-            </section>
-    </div>
+    <main>
+        <section>
+            <h2 class="title">Does it matter to use relative size(%,em,rem) one styling the size of an element so that the element is responsive ? Why ?</h2>
+            <article>
+                <p>
+                    Yes!, using these values instead of hardcoded pixel values is important because they allow our page to be responsive. But how?, to understand 
+                    that we need a primer on %, em and rem<br>
+                    percent %<br>
+                    % values apply to pretty much every size related property is css and the way they work is pretty simple. When you use percent measurnment, 
+                    context and target are taken into account and the end result is found. Here, target is the size of the element we are resizing(target size) 
+                    and context is the size of the containing element. So, when we need to find the percent whe have to apply, all we have to do is divide the 
+                    target by the context and then multiply the result by one hundred. Now this applies to almost all attributes that are inherited such as 
+                    width, font-size etc. meaning that each value assigned a percent value will take the context of the same property, meaning that width will
+                        take the context size of the parent's width and so on for other properties.
+                    https://www.sitepoint.com/power-em-units-css/<br>
+                    em<br>
+                    what about the em unit. The em unit takes a predefined measurnment value from the context and multiplies it with the constant given in front
+                    of the em unit such as 1em, 1.5em and so on. So thent the em unit works in a way very similar to percent however there is one crucial difference. 
+                    The em unit is only concerned with the font size of the context. meaning that even if we assign an em value for width or other non font properties,
+                    the initial em value is taken from the font-size of the parent element.<br>
+                    rem<br>
+                    As the name suggests, the rem unit is very similar to the em measurnment value. Similar to the em value, rem is only concerned with font size value 
+                    but what differs is that rem value doen't take the inital measurnment from the context but from the font size of the root element i.e.  the font size
+                    of the html document. Even though developers don't usually change the root font size, this value is generally accepted to be 16px since that is the
+                    default value used in almost every browser.
+                    now that we understand that, how do these values allow us to have a responsive website. These values allow us to have a responsive website in that 
+                    they are relative to each other. If  a user were to change the size of the root font, then that size would cascade down and have an effect on every
+                        browser font. As for the zoom, the zoom applies a blank increase or decrease ratio for every measurement on screen.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2 class="title">We said 16px is default browser width so what does it mean when we say 200px ? How does the browser interpret that ?</h2>
+            <article>
+                <p>
+                    Default font-size of 16px is more or less the same accross many devices and browsers. This is the default size of the html document and it is the root 
+                    font-size of the document. This ofcourse is specified in the user-stylesheet the browser has and it will remain the same size unless the user changes 
+                    the value in the browser's settings or the developer changes the value in his stylesheet. Let's say a user changes the value of the default size from 
+                    16px to 200px. This affects some aspects of the rendering of pages while it doesn't affect others. Let's startwith what isn't affected by this change,
+                        in short, everything that has sizes set in absolute measurement values such as px or pt or cm..  which do not take into account the users preferences. 
+                        On the other hand, what would be affected is any type of measurement that uses values that are relative, either em, rem or %. Any font that uses rem 
+                        any where on the web page will be affected while only those fonts that use em and  % and come right after the root element meaning the first font in 
+                        the page are affected.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2 class="title">Explain in detail(in technical terms) the specific changes in css3</h2>
+            <article>       
+                <p>
+                    There are many changes that were brought about with CCS3 and the major ones are listed below
+                    <dl>
+                        <dt>New Selectors</dt>
+                            <dd>
+                                With the arrival of CSS3 a host of new selectors have been introduced that make the styling process a lot easier.<br>
+                                Many of these changes allow us to narrow down the selection process.
+                                <h3>Attribute Selectors</h3>
+                                These selectors allow us to apply formatting to certain tags that have attributes we need
+                                <ul>
+                                    <li>E[attribute="value"]: Elements of E type which attribute is equal to its "value"</li>
+                                </ul>
+                                These attribute selectors can also work like regular expressions where we can select a value based on it's alphabet
+                                <h3>Position Selectors</h3>
+                                These selectors work based on the position of the element in the document.
+                                Each specific selector is listed below
+                                <ul>
+                                    <li>:root -> selects the root element</li>
+                                    <li>E:nth-child(N) -> selects the element of E type that is the N<sup>th</sup> child of it's parent</li>
+                                    <li>E:nth-last-child(N) -> the same as the above but starting from the last element</li> 
+                                    <li>E:nth-of-type(N) -> selects the N<sup>th</sup> element of E type in the father element</li>
+                                    <li>E:nth-last-of-type(N) -> the same as the above but starting from the last element</li>
+                                    <li>E:first-of-type -> selects an element of E type that comes first in the father element</li>
+                                    <li>E:last-of-type -> the same as the above but starting from the last element</li>
+                                    <li>E:only-child -> selects an element of E type that is the only child of its father element</li>
+                                    <li>E:only-of-type -> selects an element of any type the is the only child of it's type in it's parent</li>                                       
+                                </ul>
+                                <h3>Pseudo-Element selectors</h3>
+                                Pseudo-element selectors were available in CSS2 however
+                            </dd>
+                        <dt>Animation</dt>
+                            <dd>
+                                A CSS animation lets an element gradually change from one style to another. The whole concept of CSS animations was introduced in CSS3.
+                                below are a list of CSS properties that were introduced that allow us to make animations.
+                                <ul>
+                                    <li>animation -> specifies animations</li>
+                                    <li>animation-delay -> specifies a delay before the animation starts</li>
+                                    <li>animation-direction -> specifies the direction the animation will play in</li>
+                                </ul>
+                            </dd>
+                        <dt>Background</dt>
+                            <dd>
+                                Background CSS properties were available before CSS3 but CSS3 introduced some key attributes for controlling background.
+                                <ul>
+                                    <li>background-clip -> specifies where the background should end as in  the border-box, padding-box or content-box</li>
+                                    <li>background-origin -> specifies wehre the background should start </li>
+                                    <li>background-size -> specifies the size of the background</li>
+                                </ul>
+                            </dd>
+                        <dt>Border</dt>
+                                An ability to create and control border properties existed before CSS3 but with CSS3 important features were added. They are listed below.
+                            <dd>
+                                <ul>
+                                    <li>border-radius -> defines the shape of the border corners of an element</li>
+                                    <li>border-image -> specifies the usage of an image for a border </li>
+                                </ul>
+                                In addition to this, there are specifics that control border-radius and border-image
+                            </dd>
+                        <dt>Color</dt>
+                            <dd>
+                                The color property existed before CSS3 but CSS3 added opacity that allows us to control the transparency of any element. It also added functionality for 
+                                linear gradient and radial gradient.
+                            </dd>
+                        <dt>Flexible Box Layout</dt>
+                            <dd>
+                                Flexible Box or FlexBox for short was a completely new addition to CSS3 that allows us to place elements on screen in a completely new way.
+                            </dd>
+                        <dt>Font Properties</dt>
+                            <dd>
+                                CSS3 didn't get much innovation when it comes to fonts and it added two rather non frequently used properties. The first one is font-size-adjust which specifies
+                                which type of characters to base the font size on and the other one is font-stretch that condenses and stretches fonts. 
+                            </dd>
+                        <dt>Multi-column layout Properties</dt>
+                            <dd>
+                                Multi-column layout is a completely new addition to CSS3 that allows the usage of multiple columns to present info.<br>
+                                The following are the properties that are used to control this.
+                                <ul>
+                                    <li>column-count -> specifies the number of columns that will be used</li>
+                                    <li>column-fill -> specifies how columns will be filled</li>
+                                    <li>column-gap -> specifies the gap between columns</li>
+                                    <li>column-rule -> specifies what kind of line will be drawn between columns</li>
+                                    <li>column-span -> specifies how many columns an element will span across</li>
+                                </ul>
+                                Those are the main properties but other shorthand properties can be used as well
+                            </dd>
+                        <dt>Outline Properties</dt>
+                            <dd>
+                                Outlines are like borders for the element box and they are not new in CSS3, however, it introduced outline-offset that allows to increase the space
+                                between an outline and the border edge of an element
+                            </dd>
+                        <dt>Text Properties</dt>
+                            <dd>
+                                Text properties were not a new addition to CSS3, however it introduced properties that allow for greater text control. The properties are listed below.
+                                <ul>
+                                    <li>tab-size  -> specifies the length of the tab character</li>
+                                    <li>text-align-last -> specifies how the last line of a block is aligned</li>
+                                    <li>text-decoration-color -> specifies the color 
+                                </ul>
+                            </dd>
+                        <dt>Transform Properties</dt>
+                            <dd>
+                                The transform properties were new additions to CSS3 and they allow us to apply 2D or 3D transformations to an element such as rotating, scaling and moving elements.
+                                The following new tags associated with CSS3 allow us to perform those actions.
+                                <ul>
+                                    <li>backface-visibility -> specifies whether or not the back side of the element will be visible upon transformation</li>
+                                    <li>perspective -> defines the perspective from which all child elements of an object are viewed</li>
+                                    <li>perspective-origin -> defines the origin (the vanishing point for the 3D space) for the perspective property</li>
+                                    <li>transform -> applies a 2D or 3D transformation to an element</li>
+                                </ul>
+                            </dd>
+                        <dt>Transitions Properties</dt>
+                            <dd>
+                                Transitions were new additions to CSS3 and they were created with the aim of changing property values of elements smoothly and with a controlled delay.
+                                The following tags allow us to perform transitions. The transition properties however, have to be applied in junction with pseudo-elements.
+                                <ul>
+                                    <li>transition -> this is a shorthand property that allows us to control which property of an element changes and the delay it takes</li>
+                                </ul>
+                            </dd>
+                        <dt>Visual Formatting Properties</dt>
+                            <dd>
+                                Visual formatting properties apply to the kind of properties of an element that apply to an element's display and position within the document.
+                                Not many additions have been made to this property, however, the new changes are listed below.
+                                <ul>
+                                    <li>overflow-x -> specifies how content is dealt with if it overflows in the x direction</li>
+                                    <li>overflow-y -> specifies how content is dealt with if it overflows in the y direction</li>
+                                    <li>resize ->  specifies whether or not an element is resizable by the user</li>
+                                    <li>box-shadow -> allows us to apply a shadow to the element's box</li>
+                                    <li>box-sizing -> alters the default CSS box-model</li>
+                                </ul>
+                            </dd>
+                    </dl>
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p align="center">Developed by Minyahel Fekadu Haile &copy;2020</p>
+        <a href="https://www.facebook.com/" target="_">Facebook</a>
+        <a href="https://www.twitter.com/" target="_">Twitter</a>
+        <a href="https://www.youtube.com/" target="_">Youtube</a>
+    </footer>
 </body>
 </html>

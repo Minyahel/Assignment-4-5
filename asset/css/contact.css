@@ -1,23 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
 header {
-    border-bottom: solid 1px #9A9A9A;
+    width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #209CEE;
+    color: aliceblue;
+}
+header a {
+    padding: 0 10px 5px 10px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+}
+header a:hover {
+    color: #115380;
 }
 #intro {
-    height: 200px;
-    border-bottom: solid 1px #9A9A9A;
-
+    display: flex;
+    height: auto;
+    border-bottom: solid 2px #209CEE;
+    margin: 0 15px;
 }
 #intro img {
-    position: relative;
-    float: left;
     margin-right: 10px;
-    bottom: 20px;
+    bottom: 10px;
+    border: #209CEE solid;
+    border-radius: 100%;
+}
+main {
+    margin: 10px 70px;
 }
 
-
+footer {
+    border-top: solid 2px #209CEE;
+    margin: 0 15px;
+    text-align: center;
+    font-size: 0.8rem;
+}
 #map {
     overflow: hidden;
     float: left;
     margin-right: 20px;
+    border: solid 2px #115380;
+
 } 
 
 form {
@@ -41,27 +74,26 @@ form span:nth-of-type(2) {
 }
 form span:nth-of-type(3) {
     position: relative;
-    left: 34px;
+    left: 40px;
 }
 form span:nth-of-type(4) {
     position: relative;
-    left: 11px;
+    left: 10px;
 }
 form span:nth-of-type(5) {
     position: relative;
-    left: 43px;
+    left: 47px;
 }
 form span:nth-of-type(7) {
     position: relative;
-    left: 78px;
+    left: 90px;
 }
 #text textarea {
     position: relative;
-    left: 79px;
+    left: 90px;
     margin-top: 10px;
 }
 
-footer {
-    border-top: solid #9A9A9A 1px;
-    text-align: center;
+input[type=submit] {
+    border: solid 1px #209CEE;
 }

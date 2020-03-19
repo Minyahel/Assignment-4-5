@@ -6,9 +6,7 @@ body {
     padding: 0;
 }
 header {
-    width: 100%;
     display: flex;
-    border-bottom: solid 1px #9A9A9A;
     text-transform: uppercase;
     margin-bottom: 10px;
     padding: 10px;
@@ -24,39 +22,27 @@ header a {
 header a:hover {
     color: #115380;
 }
-
 #intro {
-    height: 30px;
+    height: 200px;
     border-bottom: solid 2px #209CEE;
     margin: 0 15px;
-    font-size: 1.5rem;
 }
-
+#intro img {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    bottom: 10px;
+    border: #209CEE solid;
+    border-radius: 100%;
+}
+main {
+    margin: 40px 70px;
+}
 footer {
     border-top: solid 2px #209CEE;
     margin: 0 15px;
     text-align: center;
     font-size: 0.8rem;
 }
-figcaption {
-    font-size: 1rem;
-    text-align: center;
-}
 
-img {
-    width: 100%;
-}
-.clear{
-    clear: left;
-}
 
-main div {
-    margin: 1.66%;
-    width: 30%;
-    height: auto;
-    float: left;
-}
-
-main h4 {
-    margin-left: 15px;
-}

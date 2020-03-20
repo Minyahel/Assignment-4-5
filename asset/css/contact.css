@@ -145,4 +145,11 @@ input[type=submit] {
     #map {
         min-height: 270px;
     }
+    #text textarea {
+        left: 8px;
+    }
 }
+@media screen and (max-width:486px) {
+    header a:nth-of-type(4) {
+        padding-right: 14px;
+    }

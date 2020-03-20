@@ -22,15 +22,30 @@
             <article>
                 <h2 class="title">We said 16px is default browser width so what does it mean when we say 200px? How does the browser interpret that?</h2>
                 <p>
+                    Do browsers have a default font-size?<br>
+                    Yes they do and this is true across many browsers, on any device. While browsers having a default font-size is good and eases a lot of design problems, we 
+                    this can get confusing sometimes and we should know what would happen if font-size were changed from 16px to 200px.
+                    <img src="https://cdn.pixabay.com/photo/2016/11/30/12/16/question-mark-1872665_1280.jpg">
                     Default font-size of 16px is more or less the same accross many devices and browsers alike. This is the default size of the html document and it is the root 
                     font-size of the document. This ofcourse is specified in the user-stylesheet the browser has and it will remain the same size unless either the user or the
                     the developer changes it. The user can change this value in the settings of his browser and the developer can change it in his style sheet.  
                     say a user changes the value of the default size from 16px to 200px, what would happen? <br> This would affect some aspects of the rendering of pages while 
                     it doesn't affect others. Let's startwith what isn't affected by this change,
-                    in short, everything that has sizes set in absolute measurement values such as px or pt or cm..  which do not take into account the users preferences. 
-                    On the other hand, what would be affected is any type of measurement that uses values that are relative, either em, rem or %. Any font that uses rem 
-                    anywhere on the web page will be affected while only those fonts that use em and  % and come right after the root element and any subsequent relatively sized
-                    elements are affected.
+                    in short, everything that has sizes set in absolute measurement values such as px or pt or cm.. These properties wouldn't get affected because they are hardcoded
+                    values and the user cannot control them.<br>
+                    On the other hand, what would be affected is any type of measurement that uses values that are relative, either em, rem or %. When any new webpage gets loaded,
+                    if there are any measurement values that take into account the font-size of the root element, then it would affect them. Any font that uses rem, which depends
+                    the size of the root element would change. Any font which uses the em value would change if that value is in the context of the html element. The same works 
+                    the % (percent) measurement as well. Any measurement specified using the % measurement will be affected if it is in the context of the root element.<br>
+                    Further reading can be found from the following links:
+                    <ul>
+                        <li>
+                            <a class="outgoing" target="_blank" href="https://nicolas-hoizey.com/articles/2016/03/02/people-don-t-change-the-default-16px-font-size-in-their-browser/">Nicholas Hoizey</a>
+                        </li>
+                        <li>
+                            <a class="outgoing" target="_blank" href="https://medium.com/@vamptvo/pixels-vs-ems-users-do-change-font-size-5cfb20831773">Medium</a>
+                        </li>
+                    </ul>
                 </p>
             </article>
         </section>

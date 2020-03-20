@@ -98,3 +98,8 @@ main h4 {
     header a:nth-of-type(4) {
         padding-right: 14px;
     }
+}
+footer img {
+    width: 30px;
+    
+}

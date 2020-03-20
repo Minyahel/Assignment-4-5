@@ -71,12 +71,14 @@ main img {
 }
 main h2 {
     text-align: center;
+    margin-bottom: 15px;
 }
 footer {
     border-top: solid 2px #209CEE;
     margin: 55px 15px 15px 15px;
     text-align: center;
     font-size: 1rem;
+    padding: 10px;
 }
 section {
     font-family: Arial, Helvetica, sans-serif;
@@ -103,7 +105,9 @@ article p {
 .date {
     font-style: italic;
     font-size: 0.8rem;
-    margin-top: 7px;
+    text-align: right;
+    margin-top: 18px;
+    margin-right: 10px;
 }
 code {
     background-color: #EDEDED;
@@ -135,3 +139,7 @@ code {
     header a:nth-of-type(4) {
         padding-right: 14px;
     }
+}
+footer p  {
+    padding-bottom:10px;
+}

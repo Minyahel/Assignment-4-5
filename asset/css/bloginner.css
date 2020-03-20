@@ -55,7 +55,7 @@ main img {
     margin-right: auto;
     margin-top: 40px;
     margin-bottom: 50px;
-    width: 700px;
+    width: 70%;
 }
 main h2 {
     text-align: center;
@@ -123,4 +123,14 @@ code {
     text-decoration: none;
     font-size: 1em;
     color: #209CEE;
+}
+
+@media screen and (max-width:1000px){
+    main {
+        margin: 0 15px;
+    }
+
+    article {
+        width: 90%;
+    }
 }

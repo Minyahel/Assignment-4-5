@@ -34,6 +34,7 @@ header {
 }
 
 header a {
+    display: inline-block;
     padding: 0 10px 5px 10px;
     text-decoration: none;
     color: aliceblue;
@@ -45,9 +46,9 @@ header a:hover {
 }
 
 #intro {
-    height: 30px;
+    height: auto;
     border-bottom: solid 1px #209CEE;
-    margin: 10px 15px;
+    margin: auto 15px;
     padding-bottom: 10px;
     font-size: 1.5rem;
 }
@@ -79,4 +80,17 @@ main div {
 
 main h4 {
     margin-left: 0.9rem;
+}
+
+@media screen and (max-width: 850px) {
+    main div {
+        float: none;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .parent {
+        display: flex;
+        flex-direction: column;
+    }
 }

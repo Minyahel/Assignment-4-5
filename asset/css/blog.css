@@ -12,12 +12,17 @@
     font-weight: normal;
     font-style: normal;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'futuralight', Helvetica, sans-serif;
     font-size: 1rem;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    width: 100%;
 }
 header {
     width: 100%;
@@ -33,10 +38,12 @@ header {
 }
 
 header a {
+    display: inline-block;
     padding: 0 10px 5px 10px;
     text-decoration: none;
     color: aliceblue;
     transition: 0.3s;
+    width: auto;
     
 }
 header a:hover {
@@ -60,7 +67,7 @@ main img {
     margin-right: auto;
     margin-top: 40px;
     margin-bottom: 0px;
-    width: 700px;
+    width: 70%;
 }
 main h2 {
     text-align: center;
@@ -96,7 +103,7 @@ article p {
 .date {
     font-style: italic;
     font-size: 0.8rem;
-    margin-right: 0.1rem;
+    margin-top: 7px;
 }
 code {
     background-color: #EDEDED;
@@ -113,5 +120,14 @@ code {
     cursor: pointer;
     font-size: 0.8rem ;
     color: black;
- 
+}
+
+@media screen and (max-width:1000px){
+    main {
+        margin: 0 15px;
+    }
+
+    article {
+        width: 90%;
+    }
 }

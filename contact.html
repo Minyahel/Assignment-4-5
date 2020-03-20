@@ -29,39 +29,41 @@
     </div>
     <main>
         <h3>Contact Me</h3>
-        <span id="map">
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=addis%20ababa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:350px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:500px;}</style></div>     
-        </span>
-        <form action = "mailto:se.minyahel.fekadu13@gmail.com" enctype="UTF-8" method = "POST">
-            
-            <span id="first_name">
-                <label for="fName">First Name: </label>
-                <input id="fName"type="text" name="fName" pattern ="[A-Z a-z]{}" required>
+        <div class="parent">
+            <span id="map">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=addis%20ababa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:350px;width:auto;}.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div>     
             </span>
-            <span id="last_name">
-                <label for="lName">Last Name: </label>
-                <input id="lName" type="text" name="lName" pattern = "[A-Z a-z]{}" >
-            </span>
-            <span id="email">
-                <label for="email">Email: </label>
-                <input id="email" type="email" name="email" required>
-            </span>
-            <span id="password">
-                <label>Password: </label>
-                <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
-            </span>
-            <span id="date">
-                <label>Date:</label>
-                <input type="date" value="date" required>  
-            </span>
-            <span id="text">
-                <label>What do you want to say?</label>
-                <textarea name="detail" id="detail" cols="50" rows="5"></textarea>
-            </span>
-            <span>
-                <input type="Submit" value="Submit">
-            </span>
-        </form>
+            <form action = "mailto:se.minyahel.fekadu13@gmail.com" enctype="UTF-8" method = "POST">
+                
+                <span id="first_name">
+                    <label for="fName">First Name: </label>
+                    <input id="fName"type="text" name="fName" pattern ="[A-Z a-z]{}" required>
+                </span>
+                <span id="last_name">
+                    <label for="lName">Last Name: </label>
+                    <input id="lName" type="text" name="lName" pattern = "[A-Z a-z]{}" >
+                </span>
+                <span id="email">
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" name="email" required>
+                </span>
+                <span id="password">
+                    <label>Password: </label>
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+                </span>
+                <span id="date">
+                    <label>Date:</label>
+                    <input type="date" value="date" required>  
+                </span>
+                <span id="text">
+                    <label>What do you want to say?</label>
+                    <textarea name="detail" id="detail" cols="50" rows="5"></textarea>
+                </span>
+                <span>
+                    <input type="Submit" value="Submit">
+                </span>
+            </form>
+        </div>
     </main>
     <footer>
         <p >Developed by Minyahel Fekadu Haile &copy;2020</p>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Minyahel Fekadu</title>
+    <link rel="stylesheet" href="./asset/css/bloginner.css">
+    <link rel="icon" href="asset/Images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="gallery.html">Gallery</a> | 
+            <a href="blog.html">Blog</a> |
+            <a href="myworks.html">My Works</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2 class="title">Why Using Relative Sizes Could Make Our Designs Responsive</h2>
+                <p id="date">Mar 18,2020</p>
+                <p>
+                    "Responsive Design" - the holy grail for web designers and a much sought after quality among web design groups and elites, but what does it
+                    actually mean?<br>
+                    Responisive Web Design to describe briefly is to use HTML and CSS magic to make web pages resize, hide, shrink and enlarge to look good on all
+                    devices. Well, it isn't actually magic but a set of well understood and implemented properties that do acheive that. Look at the image below to see
+                    how the website changes across devices. Now while that covers many aspects of responsiveness, we can use some measurements to acheive responsiveness.<br>
+                    <img src="./asset/Images/responsive.jpg">
+                    <p id="courtesy">Image courtesy of Ethan Marcotte</p>
+                    Now, there is one question that we must ask inorder to understand how to implement responsiveness<br>
+                    "Does it matter to use relative size(%,em,rem) one styling the size of an element so that the element is responsive? Why?"<br>
+                    Yes!, using these values instead of hardcoded pixel values is important because they allow our page to be responsive. But how?, to understand 
+                    that we need a primer on %, em and rem.
+                    <h3>% (percent)</h3>
+                    % values apply to pretty much every size related property is css and the way they work is pretty simple. When you use percent measurnment, 
+                    context and target are taken into account and the end result is found. Here, target is the size of the element we are resizing(target size) 
+                    and context is the size of the containing element. So, when we need to find the percent whe have to apply, all we have to do is divide the 
+                    target by the context and then multiply the result by one hundred. Now this applies to almost all attributes that are inherited such as 
+                    width, font-size etc. meaning that each value assigned a percent value will take the context of the same property, meaning that width will
+                    take the context size of the parent's width and so on for other properties.<br>
+                    Now this could make our design respond to different screen sizes if we set our width, height, margins and padding in percent since it will be calculated 
+                    the width of the viewport i.e. the screen of the users' device and thus will automaticaly adjust to different screen sizes.
+                    <h3>em</h3>
+                    what about the em unit. The em unit takes a predefined measurnment value from the context and multiplies it with the constant given in front
+                    of the em unit such as 1em, 1.5em and so on. So thent the em unit works in a way very similar to percent however there is one crucial difference. 
+                    The em unit is only concerned with the font size of the context. meaning that even if we assign an em value for width or other non font properties,
+                    the initial em value is taken from the font-size of the parent element.
+                    The em unit will generally help our design become responsive but not quite as much as percent since it takes it context value from font-size. It is preferable to 
+                    use em for font-related properties rather than as a general measurement unit.
+                    <h3>rem</h3>
+                    As the name suggests, the rem unit is very similar to the em measurnment value. Similar to the em value, rem is only concerned with font size value 
+                    but what differs is that rem value doen't take the inital measurnment from the context but from the font size of the root element i.e.  the font size
+                    of the html document. Even though developers don't usually change the root font size, this value is generally accepted to be 16px since that is the
+                    default value used in almost every browser.<br><br>
+                    Now that we understand that, how do these values allow us to have a responsive website. These values allow us to have a responsive website in that 
+                    they are relative to each other. If  a user were to change the size of the root font, then that size would cascade down and have an effect on every
+                    browser font. And for this reason alone, I believe that all text sizing should be represented in relative values because it allows for our website 
+                    to be easily accesible and readable to anyone who might visit it. This would also make our website suitable for various screen sizes, resizing automatically
+                    whenever necessary.<br><br> As for the zoom, the zoom applies a blanket increase or decrease ratio for every 
+                    measurement on screen. While we may think that this nulls the requirement for using relative values since it would allow users to increase the size of
+                    text, it actually provides a different experience. Zoom applies to every object on the screen, even to images and other non-text elements, and these elements 
+                    would get inlarge as well if a user applies it. Yes, this increases the size of the text but it completely ruins the layout of our website and ruins the experience 
+                    for the user. And because of that reason, we should not think of zoom as a substitue for using relative sizes. <br>
+                    You can look at the following link for more description<br>
+                    <a href="https://www.sitepoint.com/power-em-units-css/">Site point</a>
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Developed by Minyahel Fekadu Haile &copy;2020</p>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+    </footer>
+</body>
+</html>

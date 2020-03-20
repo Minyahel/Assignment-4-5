@@ -1,25 +1,44 @@
+@font-face {
+    font-family: 'futura';
+    src: url('../font/Futura-Thin.woff2') format('woff2'),
+         url('../font/Futura-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'futuralight';
+    src: url('../font/futura_light_bt-webfont.woff2') format('woff2'),
+         url('../font/futura_light_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'futuralight', Helvetica, sans-serif;
     font-size: 15px;
     font-size: 1rem;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 header {
     width: 100%;
     display: flex;
-    border-bottom: solid 1px #9A9A9A;
     text-transform: uppercase;
     margin-bottom: 10px;
     padding: 10px;
     background-color: #209CEE;
     color: aliceblue;
+    font-family: 'futura';
+    font-weight: bold;
+    letter-spacing: 0.3rem;
 }
+
 header a {
     padding: 0 10px 5px 10px;
     text-decoration: none;
     color: aliceblue;
     transition: 0.3s;
+    
 }
 header a:hover {
     color: #115380;
@@ -27,8 +46,9 @@ header a:hover {
 
 #intro {
     height: 30px;
-    border-bottom: solid 2px #209CEE;
-    margin: 0 15px;
+    border-bottom: solid 1px #209CEE;
+    margin: 10px 15px;
+    padding-bottom: 10px;
     font-size: 1.5rem;
 }
 
@@ -36,7 +56,7 @@ footer {
     border-top: solid 2px #209CEE;
     margin: 0 15px;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 figcaption {
     font-size: 1rem;
@@ -58,5 +78,5 @@ main div {
 }
 
 main h4 {
-    margin-left: 15px;
+    margin-left: 0.9rem;
 }

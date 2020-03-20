@@ -42,12 +42,7 @@ header a {
 header a:hover {
     color: #115380;
 }
-#intro {
-    display: flex;
-    height: auto;
-    border-bottom: solid 2px #209CEE;
-    margin: 0 15px;
-}
+
 main {
     display: flex;
     flex-direction: column;
@@ -59,7 +54,7 @@ main img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     width: 700px;
 }
 main h2 {
@@ -76,11 +71,7 @@ section {
     padding: 5px 30px;
     margin-top: 30px;
 }
-section:nth-of-type(1) , section:nth-of-type(2) {
-    border-bottom: solid 1px #209CEE;
-    padding-bottom: 50px;
 
-}
 article {
  
     font-size: 1rem;
@@ -114,4 +105,16 @@ code {
     font-size: 0.8rem ;
     color: black;
  
+}
+
+#courtesy {
+    text-align: right;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+#date {
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-right: 0.1rem;
+    text-align: right;
 }

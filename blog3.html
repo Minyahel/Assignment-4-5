@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Minyahel Fekadu</title>
+    <link rel="stylesheet" href="./asset/css/bloginner.css">
+    <link rel="icon" href="asset/Images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="gallery.html">Gallery</a> | 
+            <a href="blog.html">Blog</a> |
+            <a href="myworks.html">My Works</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2 class="title">Every New Tag And Attribute In CSS3</h2>       
+                    CSS3 has been in development since 1999 and it built upon the features of CSS2 and CSS1. Because of it's modularization, it doesn't have a specific release date
+                    but rather different modules were released in different year and even more features are in development. CSS3 has added important modules and updates for important 
+                    aspects of web design while at the same time it introduced various other features that didn't exist before. Below, I have detailed the changes that it introduced as 
+                    well as which features it introduced were completely new.
+                    <dl>
+                        <dt><h3>New Selectors</h3></dt>
+                            <dd>
+                                With the arrival of CSS3 a host of new selectors have been introduced that make the styling process a lot easier.<br>
+                                These new changes allow us to single out individual elements based on many criteria. With such a fine degree of selection, our control over our document 
+                                ever increases. The following are the major selectors that were introduced in CSS3.
+                                <h4>Attribute Selectors</h4>
+                                The CSS attribute selectors allow us to select any type of element based on the specific attribute that they have. This selector works on any CSS element.
+                                <br>The general syntax is given below.
+                                <ul>
+                                    <li><code>E[attribute="value"]:</code> Elements of E type which attribute is equal to its "value"</li>
+                                </ul>
+                                These attribute selectors can also work like regular expressions meaning that we can write a regular expression for the value if we want to filter out elements 
+                                through names or other text attributes.
+                                <h4>Position Selectors</h4>
+                                These selectors allow us to pick out a specific element from our document based on the position of the specific element in our document. This means we can select
+                                an element by specifying which type it is and it's number as a child of it's parent element. 
+                                <br>The general syntax of these position selectors is given below.
+                                <ul>
+                                    <li><code>:root</code> -> selects the root element</li>
+                                    <li><code>E:nth-child(N)</code> -> selects the element of E type that is the N<sup>th</sup> child of it's parent</li>
+                                    <li><code>E:nth-last-child(N)</code> -> the same as the above but starting from the last element</li> 
+                                    <li><code>E:nth-of-type(N)</code> -> selects the N<sup>th</sup> element of E type in the father element</li>
+                                    <li><code>E:nth-last-of-type(N)</code> -> the same as the above but starting from the last element</li>
+                                    <li><code>E:first-of-type</code> -> selects an element of E type that comes first in the father element</li>
+                                    <li><code>E:last-of-type</code> -> the same as the above but starting from the last element</li>
+                                    <li><code>E:only-child</code> -> selects an element of E type that is the only child of its father element</li>
+                                    <li><code>E:only-of-type</code> -> selects an element of any type the is the only child of it's type in it's parent</li>                                       
+                                </ul>
+                                <h4>Pseudo-Element selectors</h4>
+                                Pseudo-element selectors were available in CSS2 however, a change was brought in CSS3. Pseudo-element selectors allow us to select elements that are not actually 
+                                elements such as the first letter of a paragraph or the space after a specific element and thus the name  pseudo-element. The changes that was brought was   
+                                the change of the single colon usage(:) to double column usage(::) to distinguish between pseudo-element selectors and pseudo-class selectors.<br>
+                                There are a total of 7 pseudo-element selectors available in CSS3 and they were availabe since CSS1 but since the focus of this post is changes in CSS3, we won't be viewing 
+                                them here.
+                                <h4>Pseudo-Class selectors</h4>
+                                Pseudo-class selectors allow us to specify an element based in it's current state and thus they should not be confused with the class we give to groud elements. And thus these
+                                selectors allow us to specify an element based on whether it is active or whether the mouse is hovering over it. These were not completely new additions to CSS3 but some changes 
+                                were added such as the allowing of usage for hover for all elements instead of just anchor tags. The following were changed or added.
+                                <ul>
+                                    <li><code>:hover</code> -> specifies what an element will do when the mouse hovers over it</li>
+                                    <li><code>:focus</code> -> specifies what an input element will do when it is activated and ready to receive keyboard input</li>
+                                    <li><code>:active</code> -> specifies what an element does when it it currently selected such as a button or current link</li>
+                                </ul>
+                            </dd>
+                        <dt><h3>Animation</h3></dt>
+                            <dd>
+                                A CSS animation lets an element gradually change from one style to another and adds for the aesthetics of a website. The whole concept of CSS animations was introduced in CSS3.
+                                Below are a list of CSS properties that were introduced that allow us to make animations. While we can explicitly write many properties for animation, the animation property can 
+                                act as a combined attribute allowing us to specify many attributes at once.
+                                <ul>
+                                    <li><code>animation</code> -> specifies animations</li>
+                                    <li><code>animation-delay -> specifies</code> a delay before the animation starts</li>
+                                    <li><code>animation-direction</code> -> specifies the direction the animation will play in</li>
+                                </ul>
+                            </dd>
+                        <dt><h3>Background</h3></dt>
+                            <dd>
+                                Background CSS properties were available long before CSS3 but it's functionality grew eventually and CSS3 introduced some key attributes for controlling background.<br>
+                                Below are CSS3 attributes that are new.
+                                <ul>
+                                    <li><code>background-clip:</code> -> specifies where the background should end as in  the border-box, padding-box or content-box</li>
+                                    <li><code>background-origin:</code> -> specifies wehre the background should start </li>
+                                    <li><code>background-size:</code> -> specifies the size of the background</li>
+                                </ul>
+                            </dd>
+                        <dt><h3>Border</h3></dt>
+                            <dd>
+                                Border were availabe from CSS1 and they are an important part of any design. While the features that were added in were simple, they allow for better design.<br>
+                                Below are the new border properties.
+                                <ul>
+                                    <li><code>border-radius:</code> -> defines the shape of the border corners of an element</li>
+                                    <li><code>border-image:</code> -> specifies the usage of an image for a border </li>
+                                </ul>
+                                In addition to this, there are specifics that control which edge border-radius and border-image should be applied on.
+                            </dd>
+                        <dt><h3>Color</h3></dt>
+                            <dd>
+                                The color property existed before CSS3 but CSS3 added opacity that allows us to control the transparency of any element. It also added functionality for 
+                                linear gradient and radial gradient.
+                            </dd>
+                        <dt><h3>Flexible Box Layout</h3></dt>
+                            <dd>
+                                Flexible Box or FlexBox for short was a completely new addition to CSS3 that allows us to place elements on screen in a completely new way. Flexbox makes it easier 
+                                to orient elements either vertically or horizontally and makes it easier to distribute free space among elements.<br>
+                                The major properties associated with flexbox are listed below.
+                                <ul>
+                                    <li><code>display:flex</code> -> sets the display for a selected element to flex</li>
+                                    <li><code>flex-direction:</code> -> specifies the direction for a flexbox display</li>
+                                    <li><code>flex-wrap:</code> -> specifies whether text should be wrapped or not</li>
+                                    <li><code>justify-content:</code> -> specifies the alignment of content</li>
+                                    <li><code>align-items:</code> -> specifies how flex items should be aligned</li>
+                                </ul>
+                            </dd>
+                        <dt><h3>Font Properties</h3></dt>
+                            <dd>
+                                CSS3 didn't get much innovation when it comes to fonts and it added two rather non frequently used properties. The first one is <code>font-size-adjust:</code> which specifies
+                                which type of characters to base the font size on and the other one is font-stretch that condenses and stretches fonts. 
+                            </dd>
+                        <dt><h3>Multi-column layout Properties</h3></dt>
+                            <dd>
+                                Multi-column layout is a completely new addition to CSS3 that allows the usage of multiple columns to present info.<br>
+                                The following are the properties that are used to control this.
+                                <ul>
+                                    <li><code>column-count:</code> -> specifies the number of columns that will be used</li>
+                                    <li><code>column-fill:</code> -> specifies how columns will be filled</li>
+                                    <li><code>column-gap:</code> -> specifies the gap between columns</li>
+                                    <li><code>column-rule:</code> -> specifies what kind of line will be drawn between columns</li>
+                                    <li><code>column-span:</code> -> specifies how many columns an element will span across</li>
+                                </ul>
+                                Those are the main properties but other shorthand properties can be used as well.
+                            </dd>
+                        <dt><h3>Outline Properties</h3></dt>
+                            <dd>
+                                Outlines are like borders for the element box and they are not new in CSS3, however, it introduced outline-offset that allows to increase the space
+                                between an outline and the border edge of an element
+                            </dd>
+                        <dt><h3>Text Properties</h3></dt>
+                            <dd>
+                                Text properties were not a new addition to CSS3, however it introduced properties that allow for greater text control. The properties are listed below.
+                                <ul>
+                                    <li><code>tab-size:</code>  -> specifies the length of the tab character</li>
+                                    <li><code>text-align-last:</code> -> specifies how the last line of a block is aligned</li>
+                                    <li><code>text-decoration-color:</code> -> specifies the color 
+                                </ul>
+                            </dd>
+                        <dt><h3>Transform Properties</h3></dt>
+                            <dd>
+                                The transform properties were new additions to CSS3 and they allow us to apply 2D or 3D transformations to an element such as rotating, scaling and moving elements.
+                                The following new tags associated with CSS3 allow us to perform those actions.
+                                <ul>
+                                    <li><code>backface-visibility:</code> -> specifies whether or not the back side of the element will be visible upon transformation</li>
+                                    <li><code>perspective:</code> -> defines the perspective from which all child elements of an object are viewed</li>
+                                    <li><code>perspective-origin:</code> -> defines the origin (the vanishing point for the 3D space) for the perspective property
+                                    <li><code>transform:</code> -> applies a 2D or 3D transformation to an element</li>
+                                </ul>
+                            </dd>
+                        <dt><h3>Transitions Properties</h3></dt>
+                            <dd>
+                                Transitions were new additions to CSS3 and they were created with the aim of changing property values of elements smoothly and with a controlled delay.
+                                The following tags allow us to perform transitions. The transition properties however, have to be applied in junction with pseudo-elements.
+                                <ul>
+                                    <li><code>transition:</code> -> this is a shorthand property that allows us to control which property of an element changes and the delay it takes</li>
+                                </:ul>
+                            </dd>
+                        <dt><h3>Visual Formatting Properties</h3></dt>
+                            <dd>
+                                Visual formatting properties apply to the kind of properties of an element that apply to an element's display and position within the document.
+                                Not many additions have been made to this property, however, the new changes are listed below.
+                                <ul>
+                                    <li><code>overflow-x:</code> -> specifies how content is dealt with if it overflows in the x direction</li>
+                                    <li><code>overflow-y:</code> -> specifies how content is dealt with if it overflows in the y direction</li>
+                                    <li><code>resize:</code> ->  specifies whether or not an element is resizable by the user</li>
+                                    <li><code>box-shadow:</code> -> allows us to apply a shadow to the element's box</li>
+                                    <li><code>box-sizing:</code> -> alters the default CSS box-model</li>
+                                </ul>
+                            </dd>
+                    </dl>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Developed by Minyahel Fekadu Haile &copy;2020</p>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+    </footer>
+</body>
+</html>
